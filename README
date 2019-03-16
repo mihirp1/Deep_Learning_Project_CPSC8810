@@ -6,14 +6,14 @@ Project Team:
 
 The network structure for our classifier is as below:
 1. Read and pre-process images in training dataset
-2. Convolutional Layer 1 (Size of filter: 3*3, no. of channels: 3, no. of filters: 32) including
-Max pooling(with padding=SAME) and RELU activation function
-3. Convolutional Layer 2 (Size of filter: 3*3, no. of channels: 3, no. of filters: 32) including
-Max pooling(with padding=SAME) and RELU activation function
-4. Convolutional Layer 3 (Size of filter: 3*3, no. of channels: 3, no. of filters: 64) including
-Max pooling(with padding=SAME) and RELU activation function
-5. Flattening layer to create a single dimensional tensor
-6. Fully connected layer 1 with RELU (size- 128)
+2. Conv Layer 1 (Filter Dimension: 3*3, no. of channels: 3, no. of filters: 32) including
+Maximum pooling and Rectified Linear Unit activation function
+3. Conv Layer 2 (Filter Dimension: 3*3, no. of channels: 3, no. of filters: 32) including
+Maximum pooling and Rectified Linear Unit activation function
+4. Conv Layer 3 (Filter Dimension: 3*3, no. of channels: 3, no. of filters: 64) including
+Maximum pooling and Rectified Linear Unit activation function
+5. Flattening layer to Filter Dimensioncreate a single dimensional tensor
+6. Fully connected layer 1 with Rectified Linear Unit (size- 128)
 7. Fully connected layer 2(filter size- 128)
 8. Softmax to output of fully connected layer (for probability of each class)
 9. Output string (corresponding to the highest probability obtained through above)
