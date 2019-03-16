@@ -1,0 +1,36 @@
+A Deep Learning Model to Detect Images with Cyberbully Actions using TensorFlow
+Project Team:
+1. Mihir Phatak (mphatak@clemson.edu)
+2. Netra Inamdar (ninamda@clemson.edu)
+The network structure for our classifier is as below:
+1. Read and pre-process images in training dataset
+2. Convolutional Layer 1 (Size of filter: 3*3, no. of channels: 3, no. of filters: 32) including
+Max pooling(with padding=SAME) and RELU activation function
+3. Convolutional Layer 2 (Size of filter: 3*3, no. of channels: 3, no. of filters: 32) including
+Max pooling(with padding=SAME) and RELU activation function
+4. Convolutional Layer 3 (Size of filter: 3*3, no. of channels: 3, no. of filters: 64) including
+Max pooling(with padding=SAME) and RELU activation function
+5. Flattening layer to create a single dimensional tensor
+6. Fully connected layer 1 with RELU (size- 128)
+7. Fully connected layer 2(filter size- 128)
+8. Softmax to output of fully connected layer (for probability of each class)
+9. Output string (corresponding to the highest probability obtained through above)
+Testing the model:
+After training the model with ‘training.py’ using images from training dataset, the model is saved
+in file ‘trained-model’ in the current directory, which is used by ‘test.py’ for testing.
+For testing, ‘test.py’ receives the file name of an image as an argument.
+Eg- python test.py an_image.jpg
+The output is result of classification, one of the 10 class strings.
+File description:
+reading_data.py : This is a python code to receive and pre-process the training images.
+training.py : This is a python code for training the model as described above.
+test.py : This is a python code to test the model using trained model from ‘training.py’.
+project_report : This is a file containing midterm project report for CPSC 8810 project.
+Readme.txt : This file containing the brief description of repository contents
+Reference papers:
+
+https://www.researchgate.net/publication/325116934_Image_classification_using_Deep_learnin
+g
+https://arxiv.org/pdf/1311.2901v3.pdf
+https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-
+networks.pdf
