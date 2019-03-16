@@ -1,7 +1,9 @@
 A Deep Learning Model to Detect Images with Cyberbully Actions using TensorFlow
+
 Project Team:
 1. Mihir Phatak (mphatak@clemson.edu)
 2. Netra Inamdar (ninamda@clemson.edu)
+
 The network structure for our classifier is as below:
 1. Read and pre-process images in training dataset
 2. Convolutional Layer 1 (Size of filter: 3*3, no. of channels: 3, no. of filters: 32) including
@@ -15,9 +17,13 @@ Max pooling(with padding=SAME) and RELU activation function
 7. Fully connected layer 2(filter size- 128)
 8. Softmax to output of fully connected layer (for probability of each class)
 9. Output string (corresponding to the highest probability obtained through above)
+
+###############################
 Testing the model:
+###############################
+
 After training the model with ‘training.py’ using images from training dataset, the model is saved
-in file ‘trained-model’ in the current directory, which is used by ‘test.py’ for testing.
+in file ‘trained-model’ and 'trained-model.meta' in the current directory, which is used by ‘test.py’ for testing.
 For testing, ‘test.py’ receives the file name of an image as an argument.
 
 ##########For Testing Use#######
@@ -35,8 +41,9 @@ File description:
 7) README : This file containing the brief description of repository contents
 
 
-
+#################################
 Reference papers:
+#################################
 
 https://www.researchgate.net/publication/325116934_Image_classification_using_Deep_learnin
 g
