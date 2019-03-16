@@ -19,14 +19,23 @@ Testing the model:
 After training the model with ‘training.py’ using images from training dataset, the model is saved
 in file ‘trained-model’ in the current directory, which is used by ‘test.py’ for testing.
 For testing, ‘test.py’ receives the file name of an image as an argument.
+
+##########For Testing Use#######
 Eg- python test.py an_image.jpg
+################################
+
 The output is result of classification, one of the 10 class strings.
 File description:
-reading_data.py : This is a python code to receive and pre-process the training images.
-training.py : This is a python code for training the model as described above.
-test.py : This is a python code to test the model using trained model from ‘training.py’.
-project_report : This is a file containing midterm project report for CPSC 8810 project.
-Readme.txt : This file containing the brief description of repository contents
+1) reading_data.py : This is a python code to receive and pre-process the training images.
+2) training.py : This is a python code for training the model as described above.
+3) test.py : This is a python code to test the model using trained model from ‘training.py’.
+4) CPSC 8810-Project Report : This is a file containing midterm project report for CPSC 8810 project.
+5) trained-model : Trained Model
+6) trained-model.meta : Trained Model Graph Metadata
+7) README : This file containing the brief description of repository contents
+
+
+
 Reference papers:
 
 https://www.researchgate.net/publication/325116934_Image_classification_using_Deep_learnin
